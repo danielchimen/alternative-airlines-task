@@ -1,13 +1,13 @@
-import { Searchbox } from "@components/Searchbox";
+import { Searchbox } from '@components/Searchbox';
 
 // Images
-import backgroundImage from "@images/background-image.jpg";
-import trustPilot from "@images/trustpilot.png";
+import backgroundImage from '@images/background-image.jpg';
+import trustPilot from '@images/trustpilot.png';
 
 export const Hero = () => {
   return (
     <div
-      className="text-primary bg-cover bg-center bg-no-repeat"
+      className="bg-cover bg-center bg-no-repeat text-primary"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="container mx-auto p-8">
@@ -25,12 +25,12 @@ export const Hero = () => {
               alt="trustpilot"
             />
             <p className="mt-2 text-sm">
-              TrustScore <strong>4.5</strong> &#124; <strong>6,500</strong>{" "}
+              TrustScore <strong>4.5</strong> &#124; <strong>6,500</strong>{' '}
               reviews
             </p>
           </div>
         </div>
-        <div className="mt-10 rounded-xl bg-white p-4 shadow-[0_0_10px_rgba(0,0,0,.1)]">
+        <div className="mt-10 rounded-xl bg-white p-4 shadow-[0_0_10px_rgba(0,0,0,.1)] lg:mb-12">
           <Searchbox />
         </div>
       </div>

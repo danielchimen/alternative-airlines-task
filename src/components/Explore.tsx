@@ -1,58 +1,58 @@
-import { type CarouselItem, Carousel } from "@components/Carousel";
+import { type CarouselItem, Carousel } from '@components/Carousel';
 
 // Images
-import sydney from "@images/destinations/sydney.jpg";
-import melbourne from "@images/destinations/melbourne.jpg";
-import brisbane from "@images/destinations/brisbane.jpg";
-import cairns from "@images/destinations/cairns.jpg";
-import goldCoast from "@images/destinations/gold-coast.jpg";
-import uluru from "@images/destinations/uluru.jpg";
+import sydney from '@images/destinations/sydney.jpg';
+import melbourne from '@images/destinations/melbourne.jpg';
+import brisbane from '@images/destinations/brisbane.jpg';
+import cairns from '@images/destinations/cairns.jpg';
+import goldCoast from '@images/destinations/gold-coast.jpg';
+import uluru from '@images/destinations/uluru.jpg';
 
 const items: CarouselItem[] = [
   {
-    href: "#",
+    href: '#',
     image: sydney,
-    title: "Sydney",
-    desc: "Australia",
+    title: 'Sydney',
+    desc: 'Australia',
   },
   {
-    href: "#",
+    href: '#',
     image: melbourne,
-    title: "Melbourne",
-    desc: "Australia",
+    title: 'Melbourne',
+    desc: 'Australia',
   },
   {
-    href: "#",
+    href: '#',
     image: brisbane,
-    title: "brisbane",
-    desc: "Australia",
+    title: 'brisbane',
+    desc: 'Australia',
   },
   {
-    href: "#",
+    href: '#',
     image: goldCoast,
-    title: "Gold Coast",
-    desc: "Australia",
+    title: 'Gold Coast',
+    desc: 'Australia',
   },
   {
-    href: "#",
+    href: '#',
     image: cairns,
-    title: "Cairns",
-    desc: "Australia",
+    title: 'Cairns',
+    desc: 'Australia',
   },
   {
-    href: "#",
+    href: '#',
     image: uluru,
-    title: "uluru",
-    desc: "Australia",
+    title: 'uluru',
+    desc: 'Australia',
   },
 ];
 
 export const Explore = () => {
   return (
-    <div className="container mx-auto mt-12">
-      <h3 className="text-primary pl-8 text-xl">Exploring Australia</h3>
+    <div className="container mx-auto mt-12 lg:mt-20">
+      <h3 className="pl-8 text-xl text-primary">Exploring Australia</h3>
       <div className="mt-4">
-        <div className="overflow-x-auto overflow-y-hidden">
+        <div className="overflow-x-hidden overflow-y-hidden">
           <Carousel items={items} />
         </div>
       </div>

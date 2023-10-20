@@ -10,8 +10,9 @@ export const Searchbox = () => {
           <ToggleButton />
         </div>
       </div>
-      <div className="md:mt-4 md:grid md:grid-cols-2">
+      <div className="md:mt-4 md:grid md:grid-cols-2 lg:grid-cols-5">
         <div className="mt-4 md:relative md:mt-0">
+          {/* FROM */}
           <div className="cursor-pointer rounded-lg border-[1px] border-gray-200 bg-white p-4 font-light text-gray-500 md:rounded-br-none md:rounded-tr-none md:border-r-0">
             <div className="flex justify-between text-[11px]">
               <span>Where from?</span>
@@ -20,6 +21,7 @@ export const Searchbox = () => {
           </div>
           <button className="absolute right-[-18px] top-[18px] hidden h-9 w-9 rounded-full border-[1px] border-gray-200 bg-white md:block"></button>
         </div>
+        {/* TO */}
         <div className="mt-2 md:mt-0">
           <div className="cursor-pointer rounded-lg border-[1px] border-gray-200 bg-white p-4 font-light text-gray-500 md:rounded-bl-none md:rounded-tl-none md:pl-8">
             <div className="flex justify-between text-[11px]">
@@ -28,16 +30,20 @@ export const Searchbox = () => {
             <div className="text-sm text-primary">Sydney (SYD)</div>
           </div>
         </div>
-        <div className="mt-2 md:mr-1">
+        {/* DATES */}
+        <div className="mt-2 md:mr-1 lg:ml-2 lg:mt-0">
           <div className="cursor-pointer rounded-lg border-[1px] border-gray-200 bg-white p-4 font-light text-gray-500">
             <div className="flex justify-between text-[11px]">
               <span>Dates</span>
               <span>14 Nights</span>
             </div>
-            <div className="text-sm text-primary">Sat 11 Jun - Sat 25 Jun</div>
+            <div className="whitespace-nowrap text-sm text-primary">
+              Sat 11 Jun - Sat 25 Jun
+            </div>
           </div>
         </div>
-        <div className="mt-2 md:ml-1">
+        {/* PAX */}
+        <div className="mt-2 md:ml-1 lg:mt-0">
           <div className="cursor-pointer rounded-lg border-[1px] border-gray-200 bg-white p-4 font-light text-gray-500">
             <div className="flex justify-between text-[11px]">
               <span>Passengers</span>
@@ -45,8 +51,18 @@ export const Searchbox = () => {
             <div className="text-sm text-primary">2 Adults, Any class</div>
           </div>
         </div>
+        {/* DESKTOP SEARCH BUTTON */}
+        <div className="hidden lg:ml-2 lg:flex">
+          <button
+            className="block min-w-full flex-1 whitespace-nowrap rounded-lg bg-secondary p-4 text-sm text-white"
+            type="button"
+          >
+            Search flights
+          </button>
+        </div>
       </div>
-      <div className="mt-2">
+      {/* SEARCH BUTTON */}
+      <div className="mt-2 lg:hidden">
         <button
           className="block min-w-full flex-1 whitespace-nowrap rounded-lg bg-secondary p-4 text-sm text-white"
           type="button"

@@ -49,9 +49,9 @@ export const Payments = () => {
         </div>
       </div>
       {/* Tablet */}
-      <div className="hidden overflow-hidden rounded-2xl bg-white md:block">
+      <div className="hidden overflow-hidden rounded-2xl bg-white md:block lg:mt-20">
         <div className="flex">
-          <div className="max-w-md p-8">
+          <div className="w-[440px] p-8 lg:w-1/2">
             <h3 className="text-xl text-primary">Buy now, pay later</h3>
             <p className="mt-4 text-lg font-light text-muted">
               Book your flights today and spread the cost over time with one of
@@ -127,7 +127,7 @@ export const Payments = () => {
             />
             <img
               src={mobile}
-              className="absolute -bottom-[140px] right-[60px] max-w-[200px]"
+              className="absolute -bottom-[140px] right-[60px] w-[200px] lg:-bottom-[220px] lg:right-[180px] lg:w-[50%]"
               alt="mobile payment methods"
             />
           </div>
