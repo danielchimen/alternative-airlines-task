@@ -40,11 +40,12 @@ export const Protections = () => {
   return (
     <div className="container mx-auto mt-10 px-8 lg:mt-20">
       <div className="overflow-hidden rounded-xl bg-white text-center md:rounded-2xl lg:flex lg:text-left">
-        <div className="hidden flex-1 bg-[url('/src/assets/images/cp-mobile.png')] bg-[length:300px] bg-[center_top_90px] bg-no-repeat text-center lg:block">
+        <div className="hidden flex-1 bg-[url('/src/assets/images/cp-mobile.png')] bg-[length:300px] bg-[center_top_90px] bg-no-repeat text-center transition-all hover:bg-[length:320px] hover:bg-[center_top_80px] lg:block">
           <div className="inline-block rounded-b-lg bg-success px-4 py-2 text-sm text-white">
             <span>Recommended</span>
           </div>
         </div>
+
         <div className="lg:flex-1">
           <div className="inline-block rounded-b-lg bg-success px-4 py-2 text-sm text-white lg:hidden">
             <span>Recommended</span>

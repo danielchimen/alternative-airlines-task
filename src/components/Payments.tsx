@@ -8,56 +8,15 @@ import mobile from '@images/bnpl-mobile.png';
 export const Payments = () => {
   return (
     <div className="container mx-auto mt-10 px-8">
-      {/* Mobile */}
-      <div className="overflow-hidden rounded-xl bg-white text-center md:hidden">
-        <div className="p-8">
-          <h3 className="text-xl text-primary">Buy now, pay later</h3>
-          <p className="mt-4 text-lg font-light text-muted">
-            Book your flights today and spread the cost over time with one of
-            our installment options
-          </p>
-        </div>
-        <div className="relative h-16">
-          <img
-            src={affirm}
-            className="absolute -top-6 left-[60%] max-w-[40px]"
-            alt="affirm logo"
-          />
-          <img
-            src={afterpay}
-            className="absolute left-[90%] top-0 max-w-[60px]"
-            alt="afterpay logo"
-          />
-          <img
-            src={klarna}
-            className="absolute -left-[2%] -top-5 max-w-[60px]"
-            alt="klarna logo"
-          />
-          <img
-            src={laybuy}
-            className="absolute left-[30%] top-3 max-w-[48px]"
-            alt="laybuy logo"
-          />
-        </div>
-        <div className="mb-8 mt-4">
-          <button
-            className="flex-grow whitespace-nowrap rounded-lg bg-secondary p-4 text-sm text-white"
-            type="button"
-          >
-            Browse payment methods
-          </button>
-        </div>
-      </div>
-      {/* Tablet */}
-      <div className="hidden overflow-hidden rounded-2xl bg-white md:block lg:mt-20">
-        <div className="flex">
-          <div className="w-[440px] p-8 lg:w-1/2">
+      <div className="overflow-hidden rounded-xl bg-white text-center md:flex md:text-left">
+        <div className="md:min-w-[400px] md:flex-1">
+          <div className="p-8">
             <h3 className="text-xl text-primary">Buy now, pay later</h3>
-            <p className="mt-4 text-lg font-light text-muted">
+            <p className="mt-4 font-light text-muted lg:text-lg">
               Book your flights today and spread the cost over time with one of
               our installment options
             </p>
-            <ul className="mt-8 hidden max-w-md list-inside space-y-4 text-lg text-muted md:block">
+            <ul className="mt-8 hidden max-w-md list-inside space-y-4 text-muted md:block lg:text-lg">
               <li className="flex items-center">
                 <svg
                   className="mr-2 h-6 w-6 flex-shrink-0 text-success"
@@ -95,39 +54,63 @@ export const Payments = () => {
                 Fast approval
               </li>
             </ul>
-            <div className="mt-10">
-              <button
-                className="flex-grow whitespace-nowrap rounded-lg bg-secondary p-4 text-sm text-white"
-                type="button"
-              >
-                Browse payment methods
-              </button>
-            </div>
           </div>
-          <div className="relative flex-1">
+          <div className="relative h-16 md:hidden">
             <img
               src={affirm}
-              className="absolute left-[60%] top-[70px] max-w-[40px]"
+              className="absolute -top-6 left-[60%] max-w-[40px]"
               alt="affirm logo"
             />
             <img
               src={afterpay}
-              className="absolute right-[10px] top-[200px] max-w-[60px]"
+              className="absolute left-[90%] top-0 max-w-[60px]"
               alt="afterpay logo"
             />
             <img
               src={klarna}
-              className="absolute -left-[55px] bottom-[10px] max-w-[60px]"
+              className="absolute -left-[2%] -top-5 max-w-[60px]"
               alt="klarna logo"
             />
             <img
               src={laybuy}
-              className="absolute left-[20px] top-[93px] max-w-[48px]"
+              className="absolute left-[30%] top-3 max-w-[48px]"
               alt="laybuy logo"
             />
+          </div>
+          <div className="mb-8 mt-4 md:px-8">
+            <button
+              className="flex-grow whitespace-nowrap rounded-lg bg-secondary p-4 text-sm text-white"
+              type="button"
+            >
+              Browse payment methods
+            </button>
+          </div>
+        </div>
+        <div className="relative hidden md:block md:flex-1">
+          <img
+            src={klarna}
+            className="absolute -left-[5px] top-[320px] max-w-[60px] lg:left-[5px] lg:top-[340px]"
+            alt="klarna logo"
+          />
+          <img
+            src={laybuy}
+            className="absolute left-[60px] top-[80px] max-w-[48px] lg:-left-[40px] lg:top-[280px]"
+            alt="laybuy logo"
+          />
+          <img
+            src={affirm}
+            className="absolute left-[200px] top-[60px] max-w-[40px] lg:left-[400px] lg:top-[240px]"
+            alt="affirm logo"
+          />
+          <img
+            src={afterpay}
+            className="absolute right-[10px] top-[180px] max-w-[60px] lg:right-[75px] lg:top-[150px]"
+            alt="afterpay logo"
+          />
+          <div className="absolute -bottom-[140px] right-[60px] w-[200px] lg:-bottom-[260px] lg:right-[120px] lg:w-[306px]">
             <img
               src={mobile}
-              className="absolute -bottom-[140px] right-[60px] w-[200px] lg:-bottom-[220px] lg:right-[180px] lg:w-[50%]"
+              className="min-w-full"
               alt="mobile payment methods"
             />
           </div>
