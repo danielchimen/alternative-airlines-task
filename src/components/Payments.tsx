@@ -8,7 +8,7 @@ import mobile from '@images/bnpl-mobile.png';
 export const Payments = () => {
   return (
     <div className="container mx-auto mt-10 px-8">
-      <div className="overflow-hidden rounded-xl bg-white text-center md:flex md:text-left">
+      <div className="group overflow-hidden rounded-xl bg-white text-center transition-all md:flex md:text-left">
         <div className="md:min-w-[400px] md:flex-1">
           <div className="p-8">
             <h3 className="text-xl text-primary">Buy now, pay later</h3>
@@ -89,25 +89,25 @@ export const Payments = () => {
         <div className="relative hidden md:block md:flex-1">
           <img
             src={klarna}
-            className="absolute -left-[5px] top-[320px] max-w-[60px] lg:left-[5px] lg:top-[340px]"
+            className="absolute -left-[5px] top-[320px] max-w-[60px] duration-500 lg:left-[5px] lg:top-[340px] group-hover:lg:-left-[10px] group-hover:lg:top-[320px]"
             alt="klarna logo"
           />
           <img
             src={laybuy}
-            className="absolute left-[60px] top-[80px] max-w-[48px] lg:-left-[40px] lg:top-[280px]"
+            className="absolute left-[60px] top-[80px] max-w-[48px] duration-500 lg:-left-[40px] lg:top-[280px] group-hover:lg:-left-[10px] group-hover:lg:top-[250px]"
             alt="laybuy logo"
           />
           <img
             src={affirm}
-            className="absolute left-[200px] top-[60px] max-w-[40px] lg:left-[400px] lg:top-[240px]"
+            className="absolute left-[200px] top-[60px] max-w-[40px] duration-500 lg:left-[400px] lg:top-[240px] group-hover:lg:left-[370px] group-hover:lg:top-[220px]"
             alt="affirm logo"
           />
           <img
             src={afterpay}
-            className="absolute right-[10px] top-[180px] max-w-[60px] lg:right-[75px] lg:top-[150px]"
+            className="absolute right-[10px] top-[180px] max-w-[60px] duration-500 lg:right-[75px] lg:top-[150px] group-hover:lg:right-[50px] group-hover:lg:top-[130px]"
             alt="afterpay logo"
           />
-          <div className="absolute -bottom-[140px] right-[60px] w-[200px] lg:-bottom-[260px] lg:right-[120px] lg:w-[306px]">
+          <div className="absolute -bottom-[140px] right-[60px] w-[200px] duration-300 lg:-bottom-[260px] lg:right-[120px] lg:w-[306px] group-hover:lg:-bottom-[240px]">
             <img
               src={mobile}
               className="min-w-full"

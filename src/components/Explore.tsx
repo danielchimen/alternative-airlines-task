@@ -52,7 +52,7 @@ export const Explore = () => {
     <div className="container mx-auto mt-12 lg:mt-20">
       <h3 className="pl-8 text-xl text-primary">Exploring Australia</h3>
       <div className="mt-4">
-        <div className="overflow-x-hidden overflow-y-hidden">
+        <div className="overflow-x-auto overflow-y-hidden">
           <Carousel items={items} />
         </div>
       </div>

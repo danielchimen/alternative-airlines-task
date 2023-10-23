@@ -3,14 +3,10 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      container: {
-        center: true,
-        padding: '1rem',
-        screens: {
-          sm: '768px',
-          md: '1024px',
-          lg: '1180px',
-        },
+      screens: {
+        sm: '576px',
+        xl: '768px',
+        '2xl': '1024px',
       },
       fontFamily: {
         sans: ['DM Sans', 'sans-serif'],
